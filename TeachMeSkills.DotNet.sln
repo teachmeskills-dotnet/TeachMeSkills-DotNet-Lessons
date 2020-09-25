@@ -13,7 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson 2", "Lesson 2", "{49
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeachMeSkills.DotNet.Lesson2", "src\Lesson 2\TeachMeSkills.DotNet.Lesson2\TeachMeSkills.DotNet.Lesson2.csproj", "{5C16FA21-9392-4CAC-BCC2-CD4453018FDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeachMeSkills.DotNet.Homework2", "src\Lesson 2\TeachMeSkills.DotNet.Homework2\TeachMeSkills.DotNet.Homework2.csproj", "{8142DDEE-82E9-45E0-BA92-40F1E601EF58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeachMeSkills.DotNet.Homework2", "src\Lesson 2\TeachMeSkills.DotNet.Homework2\TeachMeSkills.DotNet.Homework2.csproj", "{8142DDEE-82E9-45E0-BA92-40F1E601EF58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson 3", "Lesson 3", "{5D8FD64B-F0F0-471F-9884-5ABD29C53E07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeachMeSkills.DotNet.Lesson3", "src\Lesson 3\TeachMeSkills.DotNet.Lesson3\TeachMeSkills.DotNet.Lesson3.csproj", "{331B4886-FD8F-4E44-8623-F3708DDCC323}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,10 @@ Global
 		{8142DDEE-82E9-45E0-BA92-40F1E601EF58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8142DDEE-82E9-45E0-BA92-40F1E601EF58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8142DDEE-82E9-45E0-BA92-40F1E601EF58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{331B4886-FD8F-4E44-8623-F3708DDCC323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331B4886-FD8F-4E44-8623-F3708DDCC323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331B4886-FD8F-4E44-8623-F3708DDCC323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331B4886-FD8F-4E44-8623-F3708DDCC323}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +54,7 @@ Global
 		{DDE00822-1698-4640-9256-F66BD5FDC895} = {B8A8B7CF-58DE-4234-A0C9-847A1185B6C6}
 		{5C16FA21-9392-4CAC-BCC2-CD4453018FDE} = {498800EE-F4A1-47ED-B7B5-767AD5BB7BBD}
 		{8142DDEE-82E9-45E0-BA92-40F1E601EF58} = {498800EE-F4A1-47ED-B7B5-767AD5BB7BBD}
+		{331B4886-FD8F-4E44-8623-F3708DDCC323} = {5D8FD64B-F0F0-471F-9884-5ABD29C53E07}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20FF58D6-A4B3-4A14-98BB-50B00120F92B}

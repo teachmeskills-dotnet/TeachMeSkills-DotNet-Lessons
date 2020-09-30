@@ -2,6 +2,7 @@
 
 namespace TeachMeSkills.DotNet.Lesson3
 {
+
     class Program
     {
         private static double SafeDivided(double x, double? y)
@@ -72,7 +73,7 @@ namespace TeachMeSkills.DotNet.Lesson3
 
             var timeSpan1 = new TimeSpan(date2.Ticks);
             Console.WriteLine(timeSpan1);
-            
+
             var sum = date1.Add(timeSpan1);
             Console.WriteLine(sum);
         }
@@ -90,11 +91,67 @@ namespace TeachMeSkills.DotNet.Lesson3
             Console.WriteLine(d3.AddYears(-1));
         }
 
+        private static void WorkWithCatClass()
+        {
+            Cat cat;
+            try
+            {
+                cat = new Cat("");
+            }
+            catch (Exception ex)
+            {
+                cat = new Cat();
+                Console.WriteLine(ex.Message);
+            }
+
+            cat.Age = 1;
+            //cat.SetBrand("British");
+            GetCatInfo(cat);
+            cat.Color = Color.Gray;
+            cat.FullName = "Lord Wiskas";
+            GetCatInfo(cat);
+        }
+
+        private static void GetCatInfo(Cat cat)
+        {
+            Console.WriteLine("---");
+            Console.WriteLine($"{nameof(cat.FullName)}: {cat.FullName}");
+            cat.GetBrand();
+            Console.WriteLine(cat.Age);
+            Console.WriteLine(cat.Color);
+            Console.WriteLine("---");
+        }
+
+        private static void CatWithState()
+        {
+            var cat1 = new Cat()
+            {
+                //Age = 1,
+                //Color = Color.Black,
+                //FullName = "Lord Wiskas"
+                FullName = "Cat1"
+            };
+            //cat.SetBrand("British");
+
+            var cat2 = new Cat()
+            {
+                FullName = "Cat2"
+            };
+
+            cat1.Sleep();
+            cat1.Play();
+            cat2.Play();
+            cat1.WakeUp();
+            cat1.Play();
+        }
+
         static void Main(string[] args)
         {
             //TryCatchFinally();
             //SumDateTime();
-            SubDate();
+            //SubDate();
+            //WorkWithCatClass();
+            //CatWithState();
 
             Console.WriteLine("Main method");
             Console.ReadKey();

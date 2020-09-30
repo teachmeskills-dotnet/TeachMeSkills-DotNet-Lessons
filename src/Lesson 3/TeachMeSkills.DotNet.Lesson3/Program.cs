@@ -145,6 +145,19 @@ namespace TeachMeSkills.DotNet.Lesson3
             cat1.Play();
         }
 
+        private static void CarWithSpeed(Car car)
+        {
+            car.GetCurrentSpeed();
+            car.Start();
+            car.GetCurrentSpeed();
+            car.GetCurrentSpeed();
+            car.GetCurrentSpeed();
+            car.GetCurrentSpeed();
+            car.GetCurrentSpeed();
+            car.Stop();
+            car.GetCurrentSpeed();
+        }
+
         static void Main(string[] args)
         {
             //TryCatchFinally();
@@ -152,6 +165,15 @@ namespace TeachMeSkills.DotNet.Lesson3
             //SubDate();
             //WorkWithCatClass();
             //CatWithState();
+
+            var car1 = new Car(100);
+            CarWithSpeed(car1);
+            Console.WriteLine("-----");
+            var car2 = new Car(2);
+            CarWithSpeed(car2);
+            Console.WriteLine("-----");
+            var car3 = new Car(12);
+            CarWithSpeed(car3);
 
             Console.WriteLine("Main method");
             Console.ReadKey();

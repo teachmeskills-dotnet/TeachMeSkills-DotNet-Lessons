@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using TeachMeSkills.DotNet.Lesson3.Basic;
+using TeachMeSkills.DotNet.Lesson3.OOP;
 
 namespace TeachMeSkills.DotNet.Lesson3
 {
@@ -167,14 +169,21 @@ namespace TeachMeSkills.DotNet.Lesson3
             //WorkWithCatClass();
             //CatWithState();
 
-            var car1 = new Car(100);
-            CarWithSpeed(car1);
-            Console.WriteLine("-----");
-            var car2 = new Car(2);
-            CarWithSpeed(car2);
-            Console.WriteLine("-----");
-            var car3 = new Car(12);
-            CarWithSpeed(car3);
+            //var car1 = new Car(100);
+            //CarWithSpeed(car1);
+            //Console.WriteLine("-----");
+            //var car2 = new Car(2);
+            //CarWithSpeed(car2);
+            //Console.WriteLine("-----");
+            //var car3 = new Car(12);
+            //CarWithSpeed(car3);
+
+            var animal = new Animal();
+
+            var dog = new Dog();
+            dog.SayHello();
+            dog.SayBye();
+
 
             Console.WriteLine("Main method");
             Console.ReadKey();

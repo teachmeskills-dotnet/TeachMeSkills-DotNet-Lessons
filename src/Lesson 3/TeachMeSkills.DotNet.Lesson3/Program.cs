@@ -1,4 +1,5 @@
 ﻿using System;
+using TeachMeSkills.DotNet.Lesson3.Basic;
 
 namespace TeachMeSkills.DotNet.Lesson3
 {

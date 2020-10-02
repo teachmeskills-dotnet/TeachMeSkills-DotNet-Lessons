@@ -1,4 +1,4 @@
-﻿namespace TeachMeSkills.DotNet.Lesson3
+﻿namespace TeachMeSkills.DotNet.Lesson3.Basic
 {
     /// <summary>
     /// Size.

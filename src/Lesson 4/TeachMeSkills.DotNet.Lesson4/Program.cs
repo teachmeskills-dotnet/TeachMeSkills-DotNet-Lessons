@@ -11,6 +11,8 @@ namespace TeachMeSkills.DotNet.Lesson4
                 Name = "Dog1",
                 Age = 1,
             };
+            Console.WriteLine(((IGo)dog).Go(1));
+            Console.WriteLine(((IMove)dog).Go(1));
 
             var sg = new SimpleGeneric<int, string>
             {

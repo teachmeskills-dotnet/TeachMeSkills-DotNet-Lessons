@@ -2,16 +2,21 @@
 
 namespace TeachMeSkills.DotNet.Lesson4
 {
-    public class Dog : AnimalBase, IVoice, IMove
+    public class Dog : AnimalBase, IVoice, IMove, IGo
     {
-        public int Go(int speed)
-        {
-            return 2 * speed;
-        }
-
         public void Say()
         {
             Console.WriteLine($"{Name}, Gav!");
+        }
+
+        int IMove.Go(int speed)
+        {
+            return 5 * speed;
+        }
+
+        int IGo.Go(int speed)
+        {
+            return 2 * speed;
         }
     }
 }

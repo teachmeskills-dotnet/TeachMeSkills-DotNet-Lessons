@@ -12,8 +12,11 @@ namespace TeachMeSkills.DotNet.Lesson5
             //var action = new ActionDelegate();
             //action.Run();
 
-            var predicate = new PredicateDelegate();
-            predicate.Run();
+            //var predicate = new PredicateDelegate();
+            //predicate.Run();
+
+            var func = new FuncDelegate();
+            func.Run();
 
             Console.ReadKey();
         }

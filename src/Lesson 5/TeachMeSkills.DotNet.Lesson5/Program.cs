@@ -6,8 +6,11 @@ namespace TeachMeSkills.DotNet.Lesson5
     {
         static void Main(string[] args)
         {
-            var simple = new SimpleDelegate();
-            simple.Run();
+            //var simple = new SimpleDelegate();
+            //simple.Run();
+
+            var action = new ActionDelegate();
+            action.Run();
 
             Console.ReadKey();
         }

@@ -9,8 +9,11 @@ namespace TeachMeSkills.DotNet.Lesson5
             //var simple = new SimpleDelegate();
             //simple.Run();
 
-            var action = new ActionDelegate();
-            action.Run();
+            //var action = new ActionDelegate();
+            //action.Run();
+
+            var predicate = new PredicateDelegate();
+            predicate.Run();
 
             Console.ReadKey();
         }

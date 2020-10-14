@@ -14,9 +14,16 @@ namespace TeachMeSkills.DotNet.Lesson5
             Console.WriteLine($"Good morning, {name}!");
         }
 
-        public static void GoodMorningWithNameAndAge(string name, int ages)
+        public static void GoodMorningWithNameAndAge(string name, int age)
         {
             Console.WriteLine($"Good morning, {name} {age}!");
         }
+
+        public static bool CompareWithValue(int val)
+        {
+            return val > 10;
+        }
+
+
     }
 }

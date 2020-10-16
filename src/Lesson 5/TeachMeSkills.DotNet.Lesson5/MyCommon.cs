@@ -23,7 +23,5 @@ namespace TeachMeSkills.DotNet.Lesson5
         {
             return val > 10;
         }
-
-
     }
 }

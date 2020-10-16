@@ -15,8 +15,11 @@ namespace TeachMeSkills.DotNet.Lesson5
             //var predicate = new PredicateDelegate();
             //predicate.Run();
 
-            var func = new FuncDelegate();
-            func.Run();
+            //var func = new FuncDelegate();
+            //func.Run();
+
+            var lamda = new LamdaExample();
+            lamda.Run();
 
             Console.ReadKey();
         }

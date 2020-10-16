@@ -18,10 +18,28 @@ namespace TeachMeSkills.DotNet.Lesson5
             //var func = new FuncDelegate();
             //func.Run();
 
-            var lamda = new LamdaExample();
-            lamda.Run();
+            //var lamda = new LamdaExample();
+            //lamda.Run();
+
+            var eventExample = new EventExample();
+            eventExample.Notify += DisplayMessage;
+            eventExample.Notify += DisplayAnotherMessage;
+            eventExample.Send(10);
+            eventExample.Notify -= DisplayAnotherMessage;
+            eventExample.Send(10);
+
 
             Console.ReadKey();
+        }
+
+        private static void DisplayMessage(string str)
+        {
+            Console.WriteLine(str);
+        }
+
+        private static void DisplayAnotherMessage(string str)
+        {
+            Console.WriteLine(str + "SUPER");
         }
     }
 }

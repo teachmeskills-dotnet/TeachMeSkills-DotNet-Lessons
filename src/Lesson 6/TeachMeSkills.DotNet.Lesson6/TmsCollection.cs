@@ -79,7 +79,7 @@ namespace TeachMeSkills.DotNet.Lesson6
                 list.Add(rand.Next(-10, 10));
             }
 
-            return list1;
+            return list;
         }
     }
 }

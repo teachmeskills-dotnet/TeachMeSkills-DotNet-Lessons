@@ -8,9 +8,14 @@ namespace TeachMeSkills.DotNet.Lesson6
         {
             //var TMSCollection = new TmsCollection();
             //TMSCollection.Run();
+            
+            //var linqSamples = new Linq();
+            //linqSamples.Run();
 
-            var linqSamples = new Linq();
-            linqSamples.Run();
+            var newlinqSapmles = new LinqSamples();
+            newlinqSapmles.Run();
+
+            Console.ReadKey();
         }
     }
 }

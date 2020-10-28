@@ -12,11 +12,14 @@ namespace TeachMeSkills.DotNet.Lesson6
             //var linqSamples = new Linq();
             //linqSamples.Run();
 
-            var newlinqSapmles = new LinqSamples();
-            newlinqSapmles.Run();
+            //var newlinqSapmles = new LinqSamples();
+            //newlinqSapmles.Run();
 
             //var Regex = new RegexSample();
             //Regex.Run();
+
+            var additionalTask = new AdditionalTask();
+            additionalTask.Run();
 
             Console.ReadKey();
         }

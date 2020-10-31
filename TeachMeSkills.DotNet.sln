@@ -35,7 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeachMeSkills.DotNet.Homewo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson 6", "Lesson 6", "{2EED9317-0B96-4658-9A8B-8397CE96268C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeachMeSkills.DotNet.Lesson6", "src\Lesson 6\TeachMeSkills.DotNet.Lesson6\TeachMeSkills.DotNet.Lesson6.csproj", "{B76E4989-05A9-4140-A4F7-712B2B006CF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeachMeSkills.DotNet.Lesson6", "src\Lesson 6\TeachMeSkills.DotNet.Lesson6\TeachMeSkills.DotNet.Lesson6.csproj", "{B76E4989-05A9-4140-A4F7-712B2B006CF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homeworks", "Homeworks", "{DB68476C-8755-4C16-BDF7-B87A897F42ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{D5901673-6B39-4179-AFB2-85A059A5471F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

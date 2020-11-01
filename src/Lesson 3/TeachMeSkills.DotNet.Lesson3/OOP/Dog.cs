@@ -2,13 +2,12 @@
 
 namespace TeachMeSkills.DotNet.Lesson3.OOP
 {
-    class Dog : Animal
+    internal class Dog : Animal
     {
         public override int Age { get => base.Age; set => base.Age = value; }
 
         public void qwe()
         {
-
         }
 
         public override void SayHello()

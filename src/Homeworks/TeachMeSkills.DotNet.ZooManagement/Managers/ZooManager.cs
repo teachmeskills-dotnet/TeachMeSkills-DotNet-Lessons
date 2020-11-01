@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using TeachMeSkills.DotNet.ZooManagement.Interfaces;
+using TeachMeSkills.DotNet.ZooManagement.Models;
 
-namespace TeachMeSkills.DotNet.Homework4
+namespace TeachMeSkills.DotNet.ZooManagement.Managers
 {
     public class ZooManager : IZooManager, ICanInteract
     {
@@ -11,8 +13,7 @@ namespace TeachMeSkills.DotNet.Homework4
         {
             foreach (var animal in Animals)
             {
-                Console.WriteLine(animal.Name);
-                Console.WriteLine(animal.Age);
+                Console.WriteLine($"Animal: {animal.Name}, {animal.Age}");
             }
         }
 
@@ -20,8 +21,8 @@ namespace TeachMeSkills.DotNet.Homework4
         {
             Animals.Add(new Fox
             {
+                Name = "test",
                 Age = 1,
-                Name = "test"
             });
 
             Show();

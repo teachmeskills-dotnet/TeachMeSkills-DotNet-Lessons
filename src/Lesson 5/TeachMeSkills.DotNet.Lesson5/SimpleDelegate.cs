@@ -2,7 +2,7 @@
 
 namespace TeachMeSkills.DotNet.Lesson5
 {
-    delegate void Message();
+    internal delegate void Message();
 
     public class SimpleDelegate
     {

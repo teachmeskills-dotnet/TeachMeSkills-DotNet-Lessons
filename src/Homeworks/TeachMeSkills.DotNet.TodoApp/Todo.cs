@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TeachMeSkills.DotNet.Homework3
+namespace TeachMeSkills.DotNet.TodoApp
 {
     /// <summary>
     /// Todo.
@@ -20,7 +20,7 @@ namespace TeachMeSkills.DotNet.Homework3
         /// 
         /// </summary>
         public string Description { get; set; }
-        
+
         /// <summary>
         /// Set status.
         /// </summary>
@@ -44,13 +44,13 @@ namespace TeachMeSkills.DotNet.Homework3
         /// </summary>
         public void GetInfo()
         {
-            Console.WriteLine();
             Console.WriteLine(Id);
             Console.WriteLine("---");
             Console.WriteLine($"Name: {Name}");
             Console.WriteLine($"Description: {Description}");
             Console.WriteLine($"Status: {_status}");
             Console.WriteLine($"DateTime: {_dateTime}");
+            Console.WriteLine();
         }
 
         /// <summary>

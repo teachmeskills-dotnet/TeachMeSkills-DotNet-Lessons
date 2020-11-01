@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace TeachMeSkills.DotNet.Homework1
+namespace TeachMeSkills.DotNet.DateHandler
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.Write("Enter your date: ");
+            Console.Write("Введите дату: ");
             string userInput = Console.ReadLine();
             bool result = DateTime.TryParse(userInput, out DateTime date);
             if (result)

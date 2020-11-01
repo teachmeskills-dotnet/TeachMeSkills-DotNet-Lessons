@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace TeachMeSkills.DotNet.Homework5
+namespace TeachMeSkills.DotNet.AtmManagement
 {
     public class Atm
     {
         public event Action<decimal, string> BalanceHandler;
+
         private decimal _balance = 0M;
 
         public void GetMoney(decimal money)

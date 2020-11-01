@@ -1,11 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
+using TeachMeSkills.DotNet.ZooManagement.Interfaces;
+using TeachMeSkills.DotNet.ZooManagement.Managers;
+using TeachMeSkills.DotNet.ZooManagement.Models;
 
-namespace TeachMeSkills.DotNet.Homework4
+namespace TeachMeSkills.DotNet.ZooManagement
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var fox = new Fox
             {

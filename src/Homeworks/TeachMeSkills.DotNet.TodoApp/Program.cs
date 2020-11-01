@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace TeachMeSkills.DotNet.Homework3
+namespace TeachMeSkills.DotNet.TodoApp
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //var backlog = new Todo[100];
             var backlog = new List<Todo>();
@@ -24,11 +23,15 @@ namespace TeachMeSkills.DotNet.Homework3
         {
             while (!inputStop)
             {
-                Console.WriteLine("Enter name and description.");
+                Console.Write("Enter name: ");
+                var name = Console.ReadLine();
+                Console.Write("Enter description: ");
+                var description = Console.ReadLine();
+
                 var todo = new Todo
                 {
-                    Name = Console.ReadLine(),
-                    Description = Console.ReadLine()
+                    Name = name,
+                    Description = description,
                 };
 
                 //backlog[0] = todo;
@@ -43,15 +46,16 @@ namespace TeachMeSkills.DotNet.Homework3
         {
             while (!inputStop)
             {
-                Console.WriteLine("Please enter todo Id");
+                Console.Write("Please enter todo Id: ");
                 var userInput = Console.ReadLine();
 
                 foreach (var todo in backlog)
                 {
-                    if (todo.GetId() == userInput)
+                    if (todo.GetId() == userInput.ToUpperInvariant())
                     {
-                        Console.WriteLine("Enter new todo status..");
-                        Console.WriteLine("Availiable statuses: InProgress, Done, Canceled");
+                        Console.WriteLine("Todo found! Enter new todo status..");
+                        Console.WriteLine("Availiable statuses: InProgress, Done, Canceled.");
+                        Console.Write("Enter status: ");
                         var newStatus = Console.ReadLine();
                         todo.SetStatus(todo.ConvertStatus(newStatus));
                     }
@@ -64,18 +68,19 @@ namespace TeachMeSkills.DotNet.Homework3
 
         private static void ShowBacklog(List<Todo> backlog)
         {
-            Console.WriteLine("=======");
+            Console.WriteLine("=======\n");
             foreach (var todo in backlog)
             {
                 todo.GetInfo();
             }
-            Console.WriteLine("=======");
+            Console.WriteLine("=======\n");
         }
 
         private static bool InputStop()
         {
-            Console.Write("Stop? Press Y/y");
+            Console.Write("Stop? (Press Y/y): ");
             var key = Console.ReadKey().Key;
+            Console.WriteLine();
             return key == ConsoleKey.Y;
         }
     }

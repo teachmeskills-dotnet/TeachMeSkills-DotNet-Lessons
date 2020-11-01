@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TeachMeSkills.DotNet.Lesson4
+﻿namespace TeachMeSkills.DotNet.Lesson4
 {
     public class SimpleGeneric<T, V>
     {

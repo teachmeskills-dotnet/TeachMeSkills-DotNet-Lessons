@@ -2,9 +2,9 @@
 
 namespace TeachMeSkills.DotNet.Lesson4
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var dog = new Dog
             {

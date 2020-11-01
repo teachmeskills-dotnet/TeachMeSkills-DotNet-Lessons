@@ -2,9 +2,9 @@
 
 namespace TeachMeSkills.DotNet.Lesson5
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //var simple = new SimpleDelegate();
             //simple.Run();
@@ -27,7 +27,6 @@ namespace TeachMeSkills.DotNet.Lesson5
             eventExample.Send(10);
             eventExample.Notify -= DisplayAnotherMessage;
             eventExample.Send(10);
-
 
             Console.ReadKey();
         }

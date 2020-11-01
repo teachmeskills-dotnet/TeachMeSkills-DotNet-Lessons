@@ -1,4 +1,4 @@
-﻿namespace TeachMeSkills.DotNet.Homework3
+﻿namespace TeachMeSkills.DotNet.TodoApp
 {
     /// <summary>
     /// Todo status.

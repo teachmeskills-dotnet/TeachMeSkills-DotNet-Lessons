@@ -8,6 +8,7 @@ namespace TeachMeSkills.DotNet.Lesson6
         public int Number { get; set; }
         public string String { get; set; }
     }
+
     public class TmsCollection
     {
         public void Run()
@@ -63,7 +64,6 @@ namespace TeachMeSkills.DotNet.Lesson6
 
             //foreach (var item in GetRandomList())
             //{
-
             //}
 
             Console.WriteLine();

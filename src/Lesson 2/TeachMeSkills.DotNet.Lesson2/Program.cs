@@ -2,12 +2,12 @@
 
 namespace TeachMeSkills.DotNet.Lesson2
 {
-    class Program
+    internal class Program
     {
         private static int _classScopeValue = 10;
         private int MyProperty { get; set; }
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var i = 0; // постфиксный
             Console.WriteLine(i++); // 0
@@ -142,6 +142,7 @@ namespace TeachMeSkills.DotNet.Lesson2
             SumArray(a, arr2);
             SumArray(a, b, c, d);
         }
+
         private static void SumArray(string a, params int[] array)
         {
             _classScopeValue = 123;
@@ -156,7 +157,7 @@ namespace TeachMeSkills.DotNet.Lesson2
             }
         }
 
-        static void ShowMessage()
+        private static void ShowMessage()
         {
             //int x = GetValue(y: "123", x: 90);
             int val1 = 90;
@@ -166,7 +167,7 @@ namespace TeachMeSkills.DotNet.Lesson2
             Console.WriteLine(val1);
         }
 
-        static (bool operationResult, int sum) GetValue(int x, string y, int z = 10)
+        private static (bool operationResult, int sum) GetValue(int x, string y, int z = 10)
         {
             x++;
             Console.WriteLine($"y = {y}");

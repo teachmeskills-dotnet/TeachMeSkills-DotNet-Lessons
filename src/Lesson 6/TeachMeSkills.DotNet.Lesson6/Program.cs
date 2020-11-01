@@ -2,9 +2,9 @@
 
 namespace TeachMeSkills.DotNet.Lesson6
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //var TMSCollection = new TmsCollection();
             //TMSCollection.Run();

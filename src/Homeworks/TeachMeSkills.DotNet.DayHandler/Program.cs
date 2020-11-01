@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace TeachMeSkills.DotNet.Homework2
+namespace TeachMeSkills.DotNet.DayHandler
 {
-    class Program
+    internal class Program
     {
-        enum Week
+        private enum Week
         {
             Unknown,
             Monday,
@@ -16,12 +16,12 @@ namespace TeachMeSkills.DotNet.Homework2
             Sunday,
         }
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var (isCorrect, day) = InputAndCheckUserData();
             if (!isCorrect)
             {
-                Console.WriteLine("The entered data is incorrect..");
+                Console.WriteLine("Некорректное значение для дня недели..");
                 Console.ReadKey();
                 return;
             }
@@ -31,9 +31,10 @@ namespace TeachMeSkills.DotNet.Homework2
 
             Console.ReadKey();
         }
+
         private static (bool isCorrect, Week day) InputAndCheckUserData()
         {
-            Console.Write("Input value: ");
+            Console.Write("Введите значение дня недели (на английском): ");
             var userInput = Console.ReadLine();
             return CheckUserInput(userInput);
         }

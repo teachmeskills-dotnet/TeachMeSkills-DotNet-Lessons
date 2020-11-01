@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using TeachMeSkills.DotNet.Lesson3.Basic;
-using TeachMeSkills.DotNet.Lesson3.OOP;
 using TeachMeSkills.DotNet.Lesson3.Test;
 
 namespace TeachMeSkills.DotNet.Lesson3
 {
-
-    class Program
+    internal class Program
     {
         private static double SafeDivided(double x, double? y)
         {
@@ -162,7 +159,7 @@ namespace TeachMeSkills.DotNet.Lesson3
             car.GetCurrentSpeed();
         }
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //TryCatchFinally();
             //SumDateTime();

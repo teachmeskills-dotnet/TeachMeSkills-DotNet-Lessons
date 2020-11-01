@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TeachMeSkills.DotNet.Lesson5
 {
     public class PredicateDelegate
     {
         //delegate bool Compare(int val);
-        Predicate<int> predicate;
-        Predicate<string> comPred = delegate (string x) { return x.Length > 10; };
+        private Predicate<int> predicate;
+
+        private Predicate<string> comPred = delegate (string x) { return x.Length > 10; };
         //Predicate<string> comPred = x => x.Length > 10;
 
         public void Run()
@@ -33,6 +32,5 @@ namespace TeachMeSkills.DotNet.Lesson5
         {
             return val < 0;
         }
-
     }
 }

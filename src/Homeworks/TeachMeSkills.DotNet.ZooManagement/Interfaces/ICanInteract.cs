@@ -1,4 +1,4 @@
-﻿namespace TeachMeSkills.DotNet.Homework4
+﻿namespace TeachMeSkills.DotNet.ZooManagement.Interfaces
 {
     public interface ICanInteract
     {

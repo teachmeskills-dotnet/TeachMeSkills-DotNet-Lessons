@@ -1,4 +1,4 @@
-# TeachMeSkills DotNet Course
+# TeachMeSkills DotNet Lessons
 
 - 📦 [Подготовка к курсу](https://github.com/teachmeskills-dotnet/TeachMeSkills-DotNet-Lessons/blob/master/docs/preparation.md)
 - ⚙️ [Настройка оркужения](https://github.com/MikhailMasny/development-configurations)

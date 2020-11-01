@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TeachMeSkills.DotNet.Homework4
+namespace TeachMeSkills.DotNet.ZooManagement.Models
 {
     public class Fox : AnimalBase<int>
     {

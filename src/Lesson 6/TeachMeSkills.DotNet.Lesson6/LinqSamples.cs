@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using System.Runtime.CompilerServices;
 
 namespace TeachMeSkills.DotNet.Lesson6
 {
@@ -132,7 +130,6 @@ namespace TeachMeSkills.DotNet.Lesson6
             var enumerableRange = Enumerable.Range(0, 10);
             var enumerableRepeat = Enumerable.Repeat("Hello", 5);
 
-
             var english2germanList = new List<English2German>
             {
                 new English2German
@@ -217,7 +214,7 @@ namespace TeachMeSkills.DotNet.Lesson6
                 .OrderBy(x => x.Name)
                 .ThenBy(x => x.Type.Length)
                 .ThenByDescending(x => x.Table.Type);
-                //.GroupBy(x => x.Name);
+            //.GroupBy(x => x.Name);
 
             var sortedCollection = defaultArray.OrderBy(x => x);
             var sortedByDescCollection = defaultArray.OrderByDescending(x => x);
@@ -225,7 +222,7 @@ namespace TeachMeSkills.DotNet.Lesson6
             string[] names = { "Name1", "Name2", "Name3" };
             DateTime[] dates = { new DateTime(2000, 10, 30), new DateTime(2001, 1, 1), new DateTime(2002, 1, 1) };
 
-            Func<string, DateTime, string> FuncDelegate = 
+            Func<string, DateTime, string> FuncDelegate =
                 (name, date) => $"Name: {name}, Date: {date}";
             var zipped = names.Zip(dates, FuncDelegate);
             var zippedTuple = names.Zip(dates);
@@ -247,11 +244,10 @@ namespace TeachMeSkills.DotNet.Lesson6
             var newCustomCollectionContains = customArray.Contains(3);
 
             var newCustomCollectionWhere = customArray.Where(x => x == 3 || x == 7);
-
         }
     }
 
-    static class LinqCustom
+    internal static class LinqCustom
     {
         public static int[] SkipWhileWithTakeCustom(this int[] value, Predicate<int> predicate, int count)
         {
@@ -275,23 +271,21 @@ namespace TeachMeSkills.DotNet.Lesson6
 
             return newCollection.ToArray();
         }
-
     }
-    
 
-    class Dog
+    internal class Dog
     {
         public int Age { get; set; }
         public string Name { get; set; }
     }
 
-    class Cat
+    internal class Cat
     {
         public string Name { get; set; }
         public int Weight { get; set; }
     }
 
-    class English2German
+    internal class English2German
     {
         public string EnglishSalute { get; set; }
         public string GermanSalute { get; set; }

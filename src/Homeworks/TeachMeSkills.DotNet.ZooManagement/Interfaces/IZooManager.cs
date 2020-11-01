@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using TeachMeSkills.DotNet.ZooManagement.Models;
 
-namespace TeachMeSkills.DotNet.Homework4
+namespace TeachMeSkills.DotNet.ZooManagement.Interfaces
 {
     public interface IZooManager
     {

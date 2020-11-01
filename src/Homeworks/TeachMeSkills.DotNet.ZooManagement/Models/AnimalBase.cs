@@ -1,4 +1,4 @@
-﻿namespace TeachMeSkills.DotNet.Homework4
+﻿namespace TeachMeSkills.DotNet.ZooManagement.Models
 {
     public abstract class AnimalBase<T>
     {

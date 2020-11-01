@@ -5,12 +5,12 @@ namespace TeachMeSkills.DotNet.Lesson1
     /// <summary>
     /// XML comment for class.
     /// </summary>
-    class Program
+    internal class Program
     {
         /// <summary>
         /// This is my enum.
         /// </summary>
-        enum Week
+        private enum Week
         {
             Mon = 1, // 1
             Tue, // 2
@@ -24,7 +24,7 @@ namespace TeachMeSkills.DotNet.Lesson1
         /// <summary>
         /// XML comment for field.
         /// </summary>
-        static string myValue = "My value";
+        private static string myValue = "My value";
 
         /// <summary>
         /// XML comment for property.

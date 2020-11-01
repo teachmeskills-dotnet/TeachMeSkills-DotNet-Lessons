@@ -3,7 +3,7 @@
 namespace TeachMeSkills.DotNet.TodoApp
 {
     /// <summary>
-    /// Todo.
+    /// TodoClass.
     /// </summary>
     public class Todo
     {

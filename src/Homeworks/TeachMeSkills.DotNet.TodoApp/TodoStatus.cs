@@ -1,7 +1,7 @@
 ﻿namespace TeachMeSkills.DotNet.TodoApp
 {
     /// <summary>
-    /// Todo status.
+    /// TodoStatus.
     /// </summary>
     public enum TodoStatus
     {

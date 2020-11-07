@@ -39,7 +39,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeachMeSkills.DotNet.TodoAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeachMeSkills.DotNet.ZooManagement", "src\Homeworks\TeachMeSkills.DotNet.ZooManagement\TeachMeSkills.DotNet.ZooManagement.csproj", "{B59D10B2-0D0F-41E4-9D11-FA095A04C8BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeachMeSkills.DotNet.AtmManagement", "src\Homeworks\TeachMeSkills.DotNet.AtmManagement\TeachMeSkills.DotNet.AtmManagement.csproj", "{615A2CBF-96D1-4343-903D-A65D28C1646B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeachMeSkills.DotNet.AtmManagement", "src\Homeworks\TeachMeSkills.DotNet.AtmManagement\TeachMeSkills.DotNet.AtmManagement.csproj", "{615A2CBF-96D1-4343-903D-A65D28C1646B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lessons", "Lessons", "{DD20150B-B0D6-4558-BC75-8F4094D6C05B}"
 EndProject
@@ -65,9 +65,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeachMeSkills.DotNet.DtoTas
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FitnessTracker", "FitnessTracker", "{7C3F6979-1B17-4E55-B41A-C81FBCA8D87D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeachMeSkills.DotNet.FitnessTrackerCore", "src\Homeworks\FitnessTracker\TeachMeSkills.DotNet.FitnessTrackerCore\TeachMeSkills.DotNet.FitnessTrackerCore.csproj", "{6AC47D6E-537C-43DF-A3C2-FCAD059AB767}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeachMeSkills.DotNet.FitnessTrackerCore", "src\Homeworks\FitnessTracker\TeachMeSkills.DotNet.FitnessTrackerCore\TeachMeSkills.DotNet.FitnessTrackerCore.csproj", "{6AC47D6E-537C-43DF-A3C2-FCAD059AB767}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeachMeSkills.DotNet.FitnessTrackerConsole", "src\Homeworks\FitnessTracker\TeachMeSkills.DotNet.FitnessTrackerConsole\TeachMeSkills.DotNet.FitnessTrackerConsole.csproj", "{EED7472E-9C3F-4CA5-BDC7-73421929A25D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeachMeSkills.DotNet.FitnessTrackerConsole", "src\Homeworks\FitnessTracker\TeachMeSkills.DotNet.FitnessTrackerConsole\TeachMeSkills.DotNet.FitnessTrackerConsole.csproj", "{EED7472E-9C3F-4CA5-BDC7-73421929A25D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeachMeSkills.DotNet.Lesson9", "src\Lessons\TeachMeSkills.DotNet.Lesson9\TeachMeSkills.DotNet.Lesson9.csproj", "{DE2B9C46-61B0-4146-86E5-0CB851F660CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -143,6 +145,10 @@ Global
 		{EED7472E-9C3F-4CA5-BDC7-73421929A25D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EED7472E-9C3F-4CA5-BDC7-73421929A25D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EED7472E-9C3F-4CA5-BDC7-73421929A25D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE2B9C46-61B0-4146-86E5-0CB851F660CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE2B9C46-61B0-4146-86E5-0CB851F660CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE2B9C46-61B0-4146-86E5-0CB851F660CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE2B9C46-61B0-4146-86E5-0CB851F660CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -168,6 +174,7 @@ Global
 		{7C3F6979-1B17-4E55-B41A-C81FBCA8D87D} = {DB68476C-8755-4C16-BDF7-B87A897F42ED}
 		{6AC47D6E-537C-43DF-A3C2-FCAD059AB767} = {7C3F6979-1B17-4E55-B41A-C81FBCA8D87D}
 		{EED7472E-9C3F-4CA5-BDC7-73421929A25D} = {7C3F6979-1B17-4E55-B41A-C81FBCA8D87D}
+		{DE2B9C46-61B0-4146-86E5-0CB851F660CB} = {DD20150B-B0D6-4558-BC75-8F4094D6C05B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20FF58D6-A4B3-4A14-98BB-50B00120F92B}

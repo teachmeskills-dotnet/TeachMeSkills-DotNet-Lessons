@@ -59,7 +59,7 @@ public class MigrationStartupFilter<TContext> :
 
 Фильтры запуска в .NET Core в основном похожи на фильтры в MVC. Они встраиваются в процесс запуска и выполняют код перед запуском приложения, причём только при запуске. Если вы когда-либо использовали Application_Start() в global.asax в .NET Framework, то это очень похоже.
 
-Осталось добавить наш фильтр в контейнер DI (https://t.me/NetDeveloperDiary/748) в Startup.cs:
+Осталось добавить наш фильтр в Startup.cs:
 
 ```
 services.AddTransient<IStartupFilter,

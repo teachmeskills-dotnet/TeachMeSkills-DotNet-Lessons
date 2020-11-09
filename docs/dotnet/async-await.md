@@ -2,7 +2,7 @@
 
 ## Лишний async/await
 
-Использование ключевых слов async/await приводит к неявному выделению памяти под конечный автомат (https://t.me/NetDeveloperDiary/249), который отвечает за организацию асинхронных вызовов. Когда ожидаемое выражение является единственным или последним оператором в функции, его можно пропустить. Однако с этим есть несколько проблем, о которых вам следует знать (https://t.me/NetDeveloperDiary/680).
+Использование ключевых слов async/await приводит к неявному выделению памяти под [конечный автомат](https://t.me/NetDeveloperDiary/249), который отвечает за организацию асинхронных вызовов. Когда ожидаемое выражение является единственным или последним оператором в функции, его можно пропустить. Однако с этим есть несколько проблем, о которых вам следует [знать](https://t.me/NetDeveloperDiary/680).
 
 ```
 ❌ Неверно
@@ -35,9 +35,10 @@ async Task DoAsync(Stream file, byte[] buffer) {
 ## Использование async void
 
 Есть две причины, по которым async void вреден:
+
 - Вызывающий код не может ожидать метод async void.
 - Невозможно обработать исключение, вызванное этим методом. Если возникает исключение, ваш процесс падает!
-Вы всегда должны использовать async Task вместо async void, если только это не обработчик событий, но тогда вы должны гарантировать себе, что метод выбросит исключения.
+  Вы всегда должны использовать async Task вместо async void, если только это не обработчик событий, но тогда вы должны гарантировать себе, что метод выбросит исключения.
 
 ```
 ❌ Неверно
@@ -54,9 +55,10 @@ async Task DoSomethingAsync() {
 ## Неподдерживаемые асинхронные делегаты
 
 Если передать асинхронную лямбда-функцию в качестве аргумента типа Action, компилятор сгенерирует метод async void, недостатки которого были описаны выше. Есть два решения этой проблемы:
-- изменить тип параметра с Action на Func<Task>, 
+
+- изменить тип параметра с Action на Func<Task>,
 - реализовать этот делегат синхронно.
-Стоит отметить, что некоторые API-интерфейсы уже предоставляют аналоги своих методов, которые принимают Func<Task>.
+  Стоит отметить, что некоторые API-интерфейсы уже предоставляют аналоги своих методов, которые принимают Func<Task>.
 
 ```
 void DoSomething() {
@@ -115,14 +117,14 @@ private async Task<int> DoSomething() {
 ```
 ❌ Неверно
 async Task DoSomethingAsync() {
-  await DoSomethingAsync1(); 
+  await DoSomethingAsync1();
   DoSomethingAsync2();
-  await DoSomethingAsync3(); 
+  await DoSomethingAsync3();
 }
 
 ✅ Верно
 async Task DoSomethingAsync() {
-  await DoSomethingAsync1(); 
+  await DoSomethingAsync1();
   await DoSomethingAsync2();
   await DoSomethingAsync3();
 }
@@ -147,7 +149,7 @@ void DoSomething() {
 ✅ Верно
 async Task DoSomething() {
   await Task.Delay(1);
-  await Task.Delay(2);    
+  await Task.Delay(2);
   var result1 = await GetAsync();
   var result2 = await GetAsync();
 }
@@ -182,7 +184,7 @@ Task DoAsync() {
 Task<object> GetSomethingAsync() {
   return null;
 }
-Task<HttpResponseMessage> 
+Task<HttpResponseMessage>
     TryGetAsync(HttpClient httpClient) {
   return httpClient?.
     GetAsync("/some/endpoint");
@@ -212,18 +214,18 @@ Task<HttpResponseMessage>
 ❌ Неверно
 public async Task<string>
    GetSomething(HttpClient http) {
-  var response = await 
-    http.GetAsync(new Uri("/endpoint/")); 
-  return await 
+  var response = await
+    http.GetAsync(new Uri("/endpoint/"));
+  return await
     response.Content.ReadAsStringAsync();
 }
 
 ✅ Верно
-public async Task<string> 
-  GetSomething(HttpClient http, 
+public async Task<string>
+  GetSomething(HttpClient http,
     CancellationToken ct) {
-  var response = await 
-    http.GetAsync(new Uri("/endpoint/"), 
+  var response = await
+    http.GetAsync(new Uri("/endpoint/"),
       ct);
   return await
     response.Content.ReadAsStringAsync();
@@ -302,7 +304,7 @@ public Task<int> DoSomethingAsync() {
 
 ✅ Верно
 public async Task<int> DoSomethingAsync() {
-  var result = 
+  var result =
     await CallDependencyAsync();
   return result + 1;
 }
@@ -335,7 +337,7 @@ public class Service : IService {
     _conn = conn;
   }
 
-  public static async Task<Service> 
+  public static async Task<Service>
       CreateAsync(IRemoteConnFactory cf)
   {
     return new Service(

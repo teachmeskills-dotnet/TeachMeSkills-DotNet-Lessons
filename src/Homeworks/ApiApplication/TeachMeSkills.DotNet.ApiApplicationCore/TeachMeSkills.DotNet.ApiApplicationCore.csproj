@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flurl" Version="3.0.0" />
+    <PackageReference Include="Flurl.Http" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>

@@ -16,7 +16,7 @@ namespace TeachMeSkills.DotNet.Lesson9.Examples
             // принадлежит основному потоку программы.
             _pool = new Semaphore(0, 3);
 
-            // Создаем и запускаем 5 пронумерованных потоков.
+            // Создаем и запускаем 20 пронумерованных потоков.
             for (int i = 1; i <= 20; i++)
             {
                 var t = new Thread(new ParameterizedThreadStart(Worker));

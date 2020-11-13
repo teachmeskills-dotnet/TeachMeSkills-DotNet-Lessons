@@ -25,8 +25,8 @@ namespace TeachMeSkills.DotNet.Lesson9
             //var mutex = new MutexExample();
             //mutex.Run();
 
-            //var semaphoreExample = new SemaphoreExample();
-            //semaphoreExample.Run();
+            var semaphoreExample = new SemaphoreExample();
+            semaphoreExample.Run();
 
             //var semaphoreSlimExample = new SemaphoreSlimExample();
             //semaphoreSlimExample.Run();
